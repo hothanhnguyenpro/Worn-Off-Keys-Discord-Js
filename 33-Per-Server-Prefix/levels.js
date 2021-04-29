@@ -40,9 +40,9 @@ const addXP = async (guildId, userId, xpToAdd, message) => {
         xp -= needed
 
         message.reply(
-          `You are now level ${level} with ${xp} experience! You now need ${getNeededXP(
+          `Bạn hiện đang ở level ${level} với ${xp} kinh nghiệm! Bạn cần nhận thêm ${getNeededXP(
             level
-          )} XP to level up again.`
+          )} XP để lên cấp mới.`
         )
 
         await profileSchema.updateOne(
